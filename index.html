@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Clock</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <article class="clock simple">
+      <div class="hours-container">
+        <div class="hours"></div>
+      </div>
+      <div class="minutes-container">
+        <div class="minutes"></div>
+      </div>
+    </article>
+
+    <audio src="audio/one.m4a" data-hour="1"/>
+    <audio src="audio/two.m4a" data-hour="2"/>
+    <audio src="audio/three.m4a" data-hour="3"/>
+
+    <audio src="audio/five-minutes.m4a" data-minutes="5"/>
+    <audio src="audio/ten-minutes.m4a" data-minutes="10"/>
+    <audio src="audio/fifthteen-minutes.m4a" data-minutes="15"/>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+
+.clock {
+  pointer-events:none;   
+  border-radius: 50%;
+  background: #fff url(ios_clock.svg) no-repeat center;
+  background-size: 88%;
+  height: 300px;
+  position: relative;
+  width: 300px;
+}
+
+
+.clock.simple:after {
+  background: #000;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 5%;
+  height: 5%;
+}
+
+.minutes-container, .hours-container {
+  pointer-events:none;   
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hours {
+  pointer-events:all;   
+  background: #000;
+  height: 20%;
+  left: 48.75%;
+  position: absolute;
+  top: 30%;
+  transform-origin: 50% 100%;
+  width: 2.5%;
+  cursor: pointer;
+}
+
+.minutes {
+  pointer-events:all;   
+  background: #000;
+  height: 40%;
+  left: 49%;
+  position: absolute;
+  top: 10%;
+  transform-origin: 50% 100%;
+  width: 2%;
+  cursor: pointer;
+}
